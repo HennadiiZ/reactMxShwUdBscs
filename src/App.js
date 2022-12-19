@@ -14,11 +14,14 @@ function App() {
 
   const expenses = [
     { id:'e1', title: 'Car Insurance', amount: 294.67, date: new Date(2021, 2, 28) },
-    { id:'e1', title: 'new TV', amount: 200, date: new Date(2021, 3, 28) },
-    { id:'e1', title: 'food', amount: 100, date: new Date(2021, 3, 19) }
+    { id:'e2', title: 'new TV', amount: 200, date: new Date(2021, 3, 28) },
+    { id:'e3', title: 'food', amount: 100, date: new Date(2021, 3, 19) }
   ];
 
-  
+  for(let i = 0; i < expenses.length; i++) {
+    // console.log(expenses[i]);
+    return <ExpenseItem title={expenses[i].title} amount={expenses[i].amount} date={expenses[i].date}/>
+  }
 
   return (
     // <div className="App">
