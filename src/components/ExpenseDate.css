@@ -1,0 +1,22 @@
+.date-item {
+  background: #000;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+
+.date-item__month {
+  color: #fff;
+  font-size: 12px;
+}
+
+.date-item__day {
+  color: #fff;
+  font-size: 12px;
+}
+
+.date-item__year {
+  color: #fff;
+  font-size: 12px;
+}
