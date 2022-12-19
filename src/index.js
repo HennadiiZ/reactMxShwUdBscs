@@ -20,3 +20,5 @@ reportWebVitals();
 // 034
 // 035
 // 036 Outputing Dynamic Data & Working with Expression in JSX
+
+// 037 passing data via props

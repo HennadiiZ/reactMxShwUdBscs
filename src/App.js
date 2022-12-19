@@ -7,6 +7,19 @@ function App() {
   // paragraph.textContent = '...';
   // document.getElementById('root').appendChild(paragraph);
   // document.getElementById('root').innerHTML = 'HELLO!'
+
+  // const expenseDate = new Date(2021, 2, 28); 
+  // const expenseTitle = 'Car Insurance';
+  // const expenseAmount = 294.67; 
+
+  const expenses = [
+    { id:'e1', title: 'Car Insurance', amount: 294.67, date: new Date(2021, 2, 28) },
+    { id:'e1', title: 'new TV', amount: 200, date: new Date(2021, 3, 28) },
+    { id:'e1', title: 'food', amount: 100, date: new Date(2021, 3, 19) }
+  ];
+
+  
+
   return (
     // <div className="App">
     //   {/* <header className="App-header">
@@ -16,7 +29,8 @@ function App() {
     // </div>
 
     <div>
-        <ExpenseItem/>
+        <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date}/>
+        {/* <ExpenseItem></ExpenseItem> */}
     </div>
 
   );
