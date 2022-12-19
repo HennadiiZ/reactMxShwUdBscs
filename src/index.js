@@ -26,3 +26,5 @@ reportWebVitals();
 // 038 Adding normal JS logic to Components
 // 039 Splitting Components Into Multiple Components
 // 040 
+
+// 040 The Concept of _Composition_ (_children props_)

@@ -1,9 +1,11 @@
 import ExpenseItem from './ExpenseItem';
 import './ExpenseWrapper.css';
+import Card from './Card';
 
 function ExpenseWrapper(props) {
+
   return (
-    <div className="expenses">
+    <Card className="expenses">
         <ExpenseItem 
         title={props.expenses[0].title} 
         amount={props.expenses[0].amount} 
@@ -24,7 +26,7 @@ function ExpenseWrapper(props) {
         amount={props.expenses[3].amount} 
         date={props.expenses[3].date}
       />
-    </div>
+    </Card>
   )
 }
 

@@ -13,7 +13,7 @@ function App() {
     <div>
       <h2>Let`s start !!!</h2>
      
-      <div className='expenses'>
+      <div>
         <ExpenseWrapper expenses={expenses}/>
       </div>
     </div>
