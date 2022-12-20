@@ -36,3 +36,6 @@ reportWebVitals();
 
 // ---------------------------- 04 React State & Working with Events ----------------------------
 // 047 Listening to Events & Working with Event Handlers
+
+// 048 How Component Functions Are Executed
+// 049 Working with _State_
