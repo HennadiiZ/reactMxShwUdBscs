@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
-  console.log('ExpenseItem evaluated by React!')
+  // console.log('ExpenseItem evaluated by React!')
   const clickHandler = () => {
     setTitle('Clicked!');
-    console.log(title);
+    // console.log(title);
   };
 
   return (
