@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ExpenseWrapper from './components/Expenses/ExpenseWrapper';
+import NewExpense from './components/NewExpense/NewExpense';
 
 // function App() {
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
 
   return (
     <div>
-      <h2>Let`s start !!!</h2>
+      <NewExpense/>
       <ExpenseWrapper expenses={expenses}/>
     </div>
   );
