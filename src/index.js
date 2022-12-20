@@ -30,3 +30,6 @@ reportWebVitals();
 // 040 The Concept of _Composition_ (_children props_)
 
 // 042 A Closer Look At JSX
+
+// 043 Organizing Component Files
+// 044 An Alternative Function Syntax

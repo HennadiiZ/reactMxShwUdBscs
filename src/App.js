@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import ExpenseWrapper from './components/ExpenseWrapper';
+import ExpenseWrapper from './components/Expenses/ExpenseWrapper';
 
-function App() {
+// function App() {
+const App = () => {
   const expenses = [
     { id:'e1', title: 'Car Insurance', amount: 294.67, date: new Date(2021, 2, 28) },
     { id:'e2', title: 'new TV', amount: 200, date: new Date(2021, 3, 28) },
