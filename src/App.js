@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import ExpenseWrapper from './components/ExpenseWrapper';
 
@@ -9,13 +10,17 @@ function App() {
     { id:'e4', title: 'drinks', amount: 10, date: new Date(2021, 3, 15) },
   ];
 
+  // return React.createElement(
+  //   'div', 
+  //   {}, 
+  //   React.createElement('h2', {}, "Let`s start !!!"), 
+  //   React.createElement(ExpenseWrapper, {expenses:expenses}) 
+  // );
+
   return (
     <div>
       <h2>Let`s start !!!</h2>
-     
-      <div>
-        <ExpenseWrapper expenses={expenses}/>
-      </div>
+      <ExpenseWrapper expenses={expenses}/>
     </div>
   );
 }
