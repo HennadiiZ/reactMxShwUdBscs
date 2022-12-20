@@ -33,3 +33,6 @@ reportWebVitals();
 
 // 043 Organizing Component Files
 // 044 An Alternative Function Syntax
+
+// ---------------------------- 04 React State & Working with Events ----------------------------
+// 047 Listening to Events & Working with Event Handlers
