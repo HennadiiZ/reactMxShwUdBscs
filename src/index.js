@@ -53,3 +53,5 @@ reportWebVitals();
 // 057 Handling Form Submission
 
 // 058 Adding Two-Way Binding
+
+// 059 Child-to-Parent Component Communication (Bottom-up)
