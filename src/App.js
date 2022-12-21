@@ -22,7 +22,7 @@ const App = () => {
       <NewExpense onAddExpense={addExpenseHandler}/>
 
       {/* <ExpensesFilter/>  */}
-      <Expenses expenses={expenses}/>
+      <Expenses items={expenses}/>
     </div>
   );
 }
