@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import ExpenseWrapper from './components/Expenses/ExpenseWrapper';
+import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
 
-// function App() {
 const App = () => {
   const expenses = [
     { id:'e1', title: 'Car Insurance', amount: 294.67, date: new Date(2021, 2, 28) },
@@ -17,17 +16,10 @@ const App = () => {
     console.log(expense);
   }
 
-  // return React.createElement(
-  //   'div', 
-  //   {}, 
-  //   React.createElement('h2', {}, "Let`s start !!!"), 
-  //   React.createElement(ExpenseWrapper, {expenses:expenses}) 
-  // );
-
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler}/>
-      <ExpenseWrapper expenses={expenses}/>
+      <Expenses expenses={expenses}/>
     </div>
   );
 }

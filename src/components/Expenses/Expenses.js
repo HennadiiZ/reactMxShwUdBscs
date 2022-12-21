@@ -1,9 +1,8 @@
 import ExpenseItem from './ExpenseItem';
-import './ExpenseWrapper.css';
+import './Expenses.css';
 import Card from '../UI/Card';
 
-// function ExpenseWrapper(props) {
-const ExpenseWrapper = (props) => {
+const Expenses = (props) => {
   return (
     <Card className="expenses">
         <ExpenseItem 
@@ -30,4 +29,4 @@ const ExpenseWrapper = (props) => {
   )
 }
 
-export default ExpenseWrapper;
+export default Expenses;
