@@ -10,7 +10,7 @@ const ExpenseItem = (props) => {
   return (
     <Card className='expense-item'>
       <div>
-        {/* <ExpenseDate date={props.date}/> */}
+        <ExpenseDate date={props.date}/>
       </div>
 
       <div className='expense-item__description'>

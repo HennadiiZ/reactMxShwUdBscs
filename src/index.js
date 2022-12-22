@@ -66,3 +66,5 @@ reportWebVitals();
 // 065 Using Stateful Lists
 
 // 066 Understanding _Keys_
+
+// 067 [assignment_solution] Time to Practice_ Working with Lists
