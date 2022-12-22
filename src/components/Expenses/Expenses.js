@@ -14,7 +14,8 @@ const Expenses = (props) => {
   let filteredExpenses = props.items.filter((expense,i) => {
     return expense.date.getFullYear().toString() ===  filteredYear;
   });
-  // console.log(...filteredExpenses);
+
+  // let expensesContent = <p>No data found.</p>;
 
   return (
     <div>
@@ -25,17 +26,9 @@ const Expenses = (props) => {
           onChangeFilter={filterChangeHandler}
         /> 
 
-        {/* {filteredExpenses.length === 0 && 'No data found.'}
-        {filteredExpenses.map((item) => (  
-          <ExpenseItem 
-            key={item.id}
-            title={item.title} 
-            amount={item.amount} 
-            date={item.date}
-          />
-        ))} */}
+        {filteredExpenses.length === 0 && <p>No data found.</p>}
         
-        {filteredExpenses.length === 0 ? <p>No data found.</p> : 
+        { filteredExpenses.length > 0 &&
           filteredExpenses.map((item) => (  
             <ExpenseItem 
               key={item.id}
