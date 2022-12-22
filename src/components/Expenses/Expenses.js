@@ -25,6 +25,7 @@ const Expenses = (props) => {
           onChangeFilter={filterChangeHandler}
         /> 
 
+        {/* {filteredExpenses.length === 0 && 'No data found.'}
         {filteredExpenses.map((item) => (  
           <ExpenseItem 
             key={item.id}
@@ -32,16 +33,18 @@ const Expenses = (props) => {
             amount={item.amount} 
             date={item.date}
           />
-        ))}
+        ))} */}
         
-        {/* {props.items.map((item) => {
-          return  <ExpenseItem 
-                    key={item.id}
-                    title={item.title} 
-                    amount={item.amount} 
-                    date={item.date}
-                  />
-        })} */}
+        {filteredExpenses.length === 0 ? <p>No data found.</p> : 
+          filteredExpenses.map((item) => (  
+            <ExpenseItem 
+              key={item.id}
+              title={item.title} 
+              amount={item.amount} 
+              date={item.date}
+            />
+          ))
+        }
       </Card>
     </div>
   )
