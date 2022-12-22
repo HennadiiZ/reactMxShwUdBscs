@@ -1,27 +1,23 @@
 import './ExpensesList.css';
-import React, { useState } from 'react';
+import React from 'react';
 import ExpenseItem from '../ExpenseItem'
 
 const ExpensesList = (props) => {
-
-  console.log(props.items);
-
-  let expensesContent = <p>No data found.</p>; 
-
-  if (props.items.length > 0) {
-    expensesContent = props.items.map((item) => (  
-      <ExpenseItem 
-        key={item.id}
-        title={item.title} 
-        amount={item.amount} 
-        date={item.date}
-      />
-    ));
+  if (props.items.length === 0) {
+    return <h2 className="expenses-list__fallback">No Data found.</h2>;
   }
 
-  return <ul className="expenses-list">
-    {expensesContent}
-  </ul>
+  return (
+    <ul className="expenses-list">
+      {props.items.map((item) => (  
+        <ExpenseItem 
+          key={item.id}
+          title={item.title} 
+          amount={item.amount} 
+          date={item.date}
+        />
+      ))}
+    </ul>)
 }
 
 export default ExpensesList;
